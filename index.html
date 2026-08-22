@@ -4,18 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ECTO Forge | Espace de mentorat et compagnonnage pour développeurs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
-      --primary: #003366;
-      --accent: #e67e22;
+      --primary: #0000a3;
+      --accent: #ff755c;
       --bg-banner: #fff3cd;
       --border-banner: #ffe8a1;
       --text: #2c3e50;
-      --bg: #f8f9fa;
+      --bg: #f7f2f2;
       --card-bg: #ffffff;
     }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Sora', sans-serif;
       line-height: 1.6;
       color: var(--text);
       background-color: var(--bg);
@@ -27,6 +31,14 @@
       color: white;
       padding: 2rem 1rem;
       text-align: center;
+    }
+    .header-logo {
+      max-height: 80px;
+      filter: invert(1);
+      margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .banner-experimental {
       background-color: var(--bg-banner);
@@ -47,10 +59,10 @@
     }
     section {
       background: var(--card-bg);
-      padding: 1.5rem 2rem;
+      padding: 2rem 2.5rem;
       margin-bottom: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
     h1 {
       margin: 0 0 0.5rem 0;
@@ -59,6 +71,12 @@
       color: var(--primary);
       border-bottom: 2px solid var(--bg);
       padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+    h2 i {
+      margin-right: 12px;
+      color: var(--accent);
     }
     ul {
       padding-left: 1.2rem;
@@ -90,22 +108,23 @@
 <body>
 
   <div class="banner-experimental">
-    ⚠️ <strong>Projet expérimental :</strong> ECTO Forge est en phase de prototypage et d'étude de marché. Nous sollicitons les commentaires des candidats potentiels. <a href="mailto:forge@ecto.coop">Partagez votre avis</a>.
+    ⚠️ <strong>Projet expérimental :</strong> ECTO Forge est en phase de prototypage et d'étude de marché. Nous sollicitons les commentaires des candidats potentiels. <a href="mailto:forge@ecto.coop">Partagez votre avis (forge@ecto.coop)</a>.
   </div>
 
   <header>
-    <h1>ECTO Forge</h1>
+    <img src="https://ecto.coop/wp-content/uploads/ECTO_logo_horizontal_monochromenoir@2x.png" alt="ECTO Logo" class="header-logo">
+    <h1>Forge</h1>
     <p>Un tremplin vers l'emploi pour les développeurs augmentés par l'IA</p>
   </header>
 
   <main>
     <section id="sommaire">
-      <h2>Sommaire exécutif</h2>
+      <h2><i class="fa-solid fa-list-check"></i> Sommaire exécutif</h2>
       <p>ECTO Forge s'établit comme un tremplin essentiel pour naviguer la transition vers un marché du travail transformé par l'IA. En combinant le mentorat de proximité d'architectes seniors et la pratique intensive de développeurs augmentés, le projet sécurise leur parcours professionnel en validant des compétences de haute rigueur technique via des contributions Open Source.</p>
     </section>
 
     <section id="mission-vision">
-      <h2>Mission et Vision</h2>
+      <h2><i class="fa-solid fa-bullseye"></i> Mission et Vision</h2>
       <h3>Mission</h3>
       <p>Catalyser l'intégration professionnelle en offrant un écosystème de mentorat humain et de pratique rigoureuse, transformant le défi technologique de l'IA en une opportunité de croissance durable.</p>
       
@@ -114,12 +133,12 @@
     </section>
 
     <section id="problematique">
-      <h2>La Problématique</h2>
+      <h2><i class="fa-solid fa-lightbulb"></i> La Problématique</h2>
       <p>Le choc de l'intelligence artificielle générative bouleverse les méthodes de développement. La difficulté majeure n'est plus la génération de code en volume, mais la capacité à contraindre et guider l'IA pour produire un code exempt de dette technique, robuste et conforme aux standards industriels. ECTO Forge apporte le cadre structuré nécessaire pour développer cette rigueur.</p>
     </section>
 
     <section id="espace-collaboratif">
-      <h2>Les Avantages de l'Espace en Personne (ECTO)</h2>
+      <h2><i class="fa-solid fa-users"></i> Les Avantages de l'Espace en Personne (ECTO)</h2>
       <p>Ancré à la coopérative de coworking ECTO sur le Plateau Mont-Royal, le projet mise sur la présence physique :</p>
       <ul>
         <li><strong>Entraide et cohésion :</strong> Salades collectives, interactions spontanées et vie de communauté.</li>
@@ -129,7 +148,7 @@
     </section>
 
     <section id="modele">
-      <h2>Structure et Modèle Pédagogique</h2>
+      <h2><i class="fa-solid fa-sitemap"></i> Structure et Modèle Pédagogique</h2>
       <ul>
         <li><strong>Mentors / Architectes Seniors :</strong> Guides et gardiens des normes de qualité, ils valident la rigueur technique des participants.</li>
         <li><strong>Développeurs Logiciels Augmentés :</strong> Diplômés ou personnes en requalification qui bâtissent un portfolio de projets Open Source probant pour faciliter leur embauche immediate.</li>
@@ -137,9 +156,9 @@
     </section>
 
     <section id="candidature" class="cta-container">
-      <h2>Interessé·e par le programme ?</h2>
+      <h2><i class="fa-solid fa-envelope"></i> Interessé·e par le programme ?</h2>
       <p>Que vous souhaitiez rejoindre la cohorte pilote ou nous faire part de vos besoins :</p>
-      <a href="mailto:forge@ecto.coop" class="btn">Donner mon avis / Postuler</a>
+      <a href="mailto:forge@ecto.coop" class="btn">Donner mon avis / Postuler à forge@ecto.coop</a>
     </section>
   </main>
 
